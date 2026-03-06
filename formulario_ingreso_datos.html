@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de datos</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Nombre completo: </label>
+        <input type="text" required>
+        <br><br>
+        <optgroup label="Tipo de documento">
+            <select name="" id="">
+                <option value="">Tarjeta de identidad</option>
+                <option value="">Cédula de ciudadania</option>
+                <option value="">Cédula extranjera</option>
+            </select>
+        </optgroup>
+        <br>
+        <label for="">Numero de documento: </label>
+        <input type="number" max="10" required>
+        <br><br>
+        <label for="">Correo electrónico: </label>
+        <input type="email" required>
+        <br><br>
+        <label for="">Numero de teléfono: </label>
+        <input type="number" max="10" required|>
+        <br><br>
+        <label for="">Direccion: </label>
+        <input type="text" required>
+        <br><br>
+        <label for="">Fecha de nacimiento: </label>
+        <input type="date" required>
+        <br><br>
+        <label for="">Edad: </label>
+        <input type="number" min="1" max="100">
+        <br><br>
+        <label for="">Género: </label>
+        <input type="checkbox">Hombre
+        <input type="checkbox">Mujer
+        <input type="checkbox">Otro...
+        <br><br>
+        <optgroup label="Preferencias">
+            <select name="" id="">
+                <option value="">Fútbol</option>
+                <option value="">Basketball</option>
+                <option value="">Voleibol</option>
+                <option value="">Natación</option>
+            </select>
+        </optgroup>
+        <br><br>
+        <label for="">Ocupación</label>
+        <input type="text">
+        <br><br>
+        <label for="">Comentarios</label><br>
+        <textarea name="" id="" rows="10" cols="100" placeholder="Escribe tu comentario aqui..."></textarea>
+        <br><br>
+        <button type="submit">Ingesar datos</button>
+    </form>
+</body>
+</html>
