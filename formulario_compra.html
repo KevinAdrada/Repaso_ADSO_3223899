@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Viajeros</title>
+    <link rel="stylesheet" href="/estilos/style.css">
+    <link rel="stylesheet" href="/estilos/formularios.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html">← Volver al inicio</a>
+        </nav>
+        <h1>FORMULARIO DE COMPRA</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Ingresa tus datos personales</h2>
+            <form action="/index.html" method="get">
+                
+                <label for="">Nombre completo:</label>
+                <br>
+                <input type="text" placeholder="Ej: Juan Pérez" required>
+                <br><br>
+
+                <label for="">Fecha de Nacimiento: </label>
+                <br>
+                <input type="date" required>
+                <br><br>
+
+                <label for="">Género:</label>
+                <br>
+                <input type="radio"><label for="hombre">Hombre</label>
+                <input type="radio"><label for="mujer">Mujer</label>
+                <input type="radio"><label for="otro">Otro</label>
+                <br><br>
+
+
+                <label for="">Tipo de documento:</label>
+                <br>
+                <select>
+                    <optgroup>
+                        <option value="">Tarjeta de identidad</option>
+                        <option value="">Cédula de ciudadanía</option>
+                        <option value="">Cédula extranjera</option>
+                    </optgroup>
+                </select>
+                <br><br>
+
+                <label for="">Número de documento:</label>
+                <br>
+                <input type="text" pattern="[0-9]{7,10}" placeholder="Solo numeros - max:10 caracteres" required>
+                <br><br>
+
+                <label for="">Número de Teléfono:</label>
+                <br>
+                <input type="text" pattern="[0-9]{7,10}" placeholder="Solo numeros - max:10 caracteres" required>
+                <br><br>
+
+                <label for="">Correo Electrónico: </label>
+                <br>
+                <input type="email" placeholder="juanperez35@gmail.com" required>
+                <br><br>
+
+
+                <label for="">Lugar desde el que inicia el viaje:</label>
+                <br>
+                <select>
+                    <option value="">Barranquilla</option>
+                    <option value="">Bogotá</option>
+                    <option value="">Cali</option>
+                    <option value="">Cartagena</option>
+                    <option value="">Medellín</option>
+                    <option value="">Pasto</option>
+                    <option value="">Popayán</option>
+                </select>
+                <br><br>
+
+
+                <label for="">Lugar al que deseas viajar:</label>
+                <br>
+                <select>
+                    <option value="">Cartagena de Indias</option>
+                    <option value="">Parque Nacional Tayrona</option>
+                    <option value="">Valle del Cocora</option>
+                    <option value="">Desierto de la Tatacoa</option>
+                    <option value="">Caño Cristales</option>
+                    <option value="">Parque Nacional Chingaza</option>
+                </select>
+                <br><br>
+
+                <label for="">Tipo de vuelo:</label>
+                <br>
+                <input type="radio"><label for="hombre">Ida</label>
+                <input type="radio"><label for="mujer">Ida y Vuelta</label>
+                <br><br>
+
+                <label>Metodos de Pago: </label>
+                <br>
+                <select>
+                    <option value="">Tarjeta de Crédito</option>
+                    <option value="">Tarjeta de Débito</option>
+                    <option value="">PSE</option>
+                    <option value="">Efectivo</option>
+                </select>
+                <br><br>
+                <label for="">Comentarios de tu viaje:</label><br>
+                <textarea rows="5" placeholder="Cuéntanos tu experiencia..."></textarea>
+                <br><br>
+
+                <input type="checkbox" required>¿Aceptas terminos y condiciones?
+                <br>
+
+                <button type="submit" style="padding: 10px 20px; cursor: pointer;">COMPRAR PASAJE</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Kevin Santiago Adrada Montilla - 3223899</p>
+    </footer>
+</body>
+</html>
