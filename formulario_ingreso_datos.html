@@ -1,64 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingreso de datos</title>
+    <title>Registro de Viajeros</title>
     <link rel="stylesheet" href="/estilos/style.css">
 </head>
 <body>
-    <h1>Registrarse</h1>
-    <form action="">
-        <label for="">Nombre completo: </label>
-        <input type="text" required>
-        <br><br>
-        <optgroup label="Tipo de documento">
-            <select name="" id="">
-                <option value="">Tarjeta de identidad</option>
-                <option value="">Cédula de ciudadania</option>
-                <option value="">Cédula extranjera</option>
-            </select>
-        </optgroup>
-        <br>
-        <label for="">Numero de documento: </label>
-        <input type="number" max="10" required>
-        <br><br>
-        <label for="">Correo electrónico: </label>
-        <input type="email" required>
-        <br><br>
-        <label for="">Numero de teléfono: </label>
-        <input type="number" max="10" required|>
-        <br><br>
-        <label for="">Direccion: </label>
-        <input type="text" required>
-        <br><br>
-        <label for="">Fecha de nacimiento: </label>
-        <input type="date" required>
-        <br><br>
-        <label for="">Edad: </label>
-        <input type="number" min="1" max="100">
-        <br><br>
-        <label for="">Género: </label>
-        <input type="checkbox">Hombre
-        <input type="checkbox">Mujer
-        <input type="checkbox">Otro...
-        <br><br>
-        <optgroup label="Preferencias">
-            <select name="" id="">
-                <option value="">Fútbol</option>
-                <option value="">Basketball</option>
-                <option value="">Voleibol</option>
-                <option value="">Natación</option>
-            </select>
-        </optgroup>
-        <br><br>
-        <label for="">Ocupación</label>
-        <input type="text">
-        <br><br>
-        <label for="">Comentarios</label><br>
-        <textarea name="" id="" rows="10" cols="100" placeholder="Escribe tu comentario aqui..."></textarea>
-        <br><br>
-        <button type="submit">Ingesar datos</button>
-    </form>
+    <header>
+        <nav>
+            <a href="/index.html">← Volver al inicio</a>
+        </nav>
+        <h1>Formulario de Registro</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Ingresa tus datos personales</h2>
+            <form action="#" method="POST">
+                
+                <label for="nombre">Nombre completo:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+                <br><br>
+
+                <label for="tipo_doc">Tipo de documento:</label><br>
+                <select name="tipo_doc" id="tipo_doc">
+                    <optgroup label="Documentos Nacionales">
+                        <option value="ti">Tarjeta de identidad</option>
+                        <option value="cc">Cédula de ciudadanía</option>
+                        <option value="ce">Cédula extranjera</option>
+                    </optgroup>
+                </select>
+                <br><br>
+
+                <label for="num_doc">Número de documento:</label><br>
+                <input type="text" id="num_doc" name="num_doc" pattern="[0-9]{7,10}" title="Ingresa un documento válido" required>
+                <br><br>
+
+                <label>Género:</label><br>
+                <input type="radio" id="hombre" name="genero" value="hombre"> <label for="hombre">Hombre</label>
+                <input type="radio" id="mujer" name="genero" value="mujer"> <label for="mujer">Mujer</label>
+                <input type="radio" id="otro" name="genero" value="otro"> <label for="otro">Otro</label>
+                <br><br>
+
+                <label for="deporte">Deporte de preferencia:</label><br>
+                <select name="deporte" id="deporte">
+                    <option value="futbol">Fútbol</option>
+                    <option value="basket">Basketball</option>
+                    <option value="voleibol">Voleibol</option>
+                    <option value="natacion">Natación</option>
+                </select>
+                <br><br>
+
+                <label for="comentarios">Comentarios de tu viaje:</label><br>
+                <textarea name="comentarios" id="comentarios" rows="5" style="width: 100%;" placeholder="Cuéntanos tu experiencia..."></textarea>
+                <br><br>
+
+                <button type="submit" style="padding: 10px 20px; cursor: pointer;">Ingresar datos</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Kevin Santiago Adrada Montilla - 3223899</p>
+    </footer>
 </body>
 </html>

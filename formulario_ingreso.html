@@ -1,33 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <title>Iniciar Sesión</title>
     <link rel="stylesheet" href="/estilos/style.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="/index.html">← Volver</a>
+        </nav>
+    </header>
+
     <main>
-        <h1>Iniciar sesion</h1>
         <section>
-            <form action="" method="get">
-                <label for="">Nombre de usuario: </label>
-                <input type="text" placeholder="Nombre de usuario o correo electronico" autocomplete="on" required>
-                <br>
-                <label for="">Correo: </label>
-                <input type="email" placeholder="Ingresa tu correo electronico" required>
-                <br>
-                <label for="">Contraseña: </label>
-                <input type="password" required placeholder="Ingresa tu contraseña">
-                <br>
-                <label for="">Confirmar ontraseña: </label>
-                <input type="password" required placeholder="Ingresa tu contraseña">
-                <br>
-                <button type="submit">Ingesar</button>
+            <h1>Iniciar Sesión</h1>
+            <form action="/login" method="get">
+                
+                <label for="user">Nombre de usuario:</label><br>
+                <input type="text" id="user" name="user" placeholder="Usuario o correo" required>
+                <br><br>
+
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                <br><br>
+
+                <label for="pass">Contraseña:</label><br>
+                <input type="password" id="pass" name="pass" placeholder="Ingresa tu contraseña" required>
+                <br><br>
+
+                <label for="confirm_pass">Confirmar contraseña:</label><br>
+                <input type="password" id="confirm_pass" name="confirm_pass" placeholder="Repite tu contraseña" required>
+                <br><br>
+
+                <button type="submit">Ingresar</button>
             </form>
         </section>
     </main>
 
-    
+    <footer>
+        <p>Kevin Santiago Adrada Montilla - 3223899</p>
+    </footer>
 </body>
 </html>

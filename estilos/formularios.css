@@ -1,0 +1,117 @@
+/* =========================================
+   ESTILOS ESPECÍFICOS PARA FORMULARIOS
+   ========================================= */
+
+/* Contenedor Principal del Formulario */
+main {
+    max-width: 600px; /* Un poco más ancho para albergar casillas grandes */
+    margin: 40px auto;
+    background-color: rgb(139, 252, 214); /* Turquesa de la página */
+    padding: 40px;
+    border-radius: 25px;
+    border: 2px solid #000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Títulos dentro del formulario */
+h1, h2 {
+    margin-bottom: 30px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Etiquetas (Labels) más grandes y legibles */
+label {
+    display: block;
+    margin-bottom: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px; /* Tamaño aumentado */
+    font-weight: bold;
+    color: rgb(0, 60, 60);
+}
+
+/* =========================================
+   CASILLAS DE RELLENO (INPUTS, SELECT, TEXTAREA)
+   ========================================= */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    /* Relleno interno generoso para casillas altas */
+    padding: 20px 15px; 
+    margin-bottom: 30px;
+    
+    /* Tipografía interna */
+    font-size: 19px; 
+    font-family: Arial, sans-serif;
+    
+    /* Bordes y Colores */
+    border: 2px solid rgb(1, 30, 199); /* Azul de tu paleta */
+    border-radius: 15px;
+    background-color: #ffffff;
+    
+    /* Evita que el padding ensanche el elemento más del 100% */
+    box-sizing: border-box; 
+    transition: all 0.3s ease;
+}
+
+/* Área de comentarios más alta por defecto */
+textarea {
+    min-height: 180px;
+    line-height: 1.5;
+    resize: vertical; /* Permite al usuario ajustar el alto */
+}
+
+/* =========================================
+   ESTADOS DE INTERACCIÓN (FOCUS)
+   ========================================= */
+input:focus, 
+select:focus, 
+textarea:focus {
+    outline: none;
+    border-color: chartreuse; /* Verde neón al seleccionar */
+    background-color: #f9fff0;
+    /* Efecto de resaltado */
+    box-shadow: 0 0 15px rgba(127, 255, 0, 0.4);
+    transform: translateY(-2px); /* Pequeña elevación visual */
+}
+
+/* =========================================
+   BOTÓN DE ACCIÓN
+   ========================================= */
+button[type="submit"] {
+    width: 100%;
+    padding: 20px;
+    background-color: #000;
+    color: chartreuse;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: chartreuse;
+    color: #000;
+    box-shadow: 0 8px 20px rgba(127, 255, 0, 0.3);
+    transform: scale(1.02);
+}
+
+/* Ajuste para Radio Buttons y Checkboxes */
+input[type="radio"], 
+input[type="checkbox"] {
+    transform: scale(1.5); /* Hace el círculo/cuadro más grande */
+    margin-right: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
