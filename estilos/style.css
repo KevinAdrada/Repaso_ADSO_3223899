@@ -68,7 +68,7 @@ main{
 section{
     background-color: rgb(172, 240, 217);
     padding: 30px;
-    margin: 50px auto;
+    margin: 40px auto;
     border-radius: 30px;
     width: 90%;
     border: 1px solid black;
@@ -146,10 +146,10 @@ table {
 }
 
 tr:nth-child(odd){
-    background-color: #acfcd5;
+    background-color: hsla(151, 100%, 84%, 0.9);
 }
 tr:nth-child(even){
-    background-color: #c3f3fa;
+    background-color: rgba(194, 242, 250, 0.9);
 }
 
 
@@ -172,7 +172,6 @@ tr:hover td {
     background-color: rgba(0, 255, 72, 0.3);
     transition: background-color 0.3s ease;
 }
-
 
 td b {
     color: #ec5e4e; 
