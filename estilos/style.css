@@ -27,7 +27,7 @@ nav ul{
 nav a{
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 
@@ -45,6 +45,12 @@ nav li a:hover{
     color: rgb(255, 255, 255);
     text-shadow: 5px 3px 4px rgb(47, 244, 8);
     transform: scale(1.1);
+    transition: 0.5s;
+}
+
+nav li a:active{
+    color: rgb(255, 0, 0);
+    transition: 1s;
 }
 
 
@@ -110,6 +116,12 @@ a:hover{
     color: rgb(0, 255, 38);
     text-shadow: 5px 3px 4px rgb(255, 255, 255), 
     1px 1px 1px black;
+    transition: 0.5s;
+}
+
+a:active{
+    color: red;
+    transition: 1s;
 }
 
 
@@ -134,7 +146,10 @@ table {
 }
 
 tr:nth-child(odd){
-    background-color: #d1fae6;
+    background-color: #acfcd5;
+}
+tr:nth-child(even){
+    background-color: #c3f3fa;
 }
 
 
